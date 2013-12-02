@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+
+       <!-- External javascripts look like this -->
+       <script src="name_of_javascript.js"></script>
+
+</head>
+<body>
+
+	<h1> THIS IS THE TITLE OF THE PAGE </h1>
+
+	<p id="demo"> This is the paragraph before the button click. </p>
+
+	<button type="button" onclick="textChange()">Text Changer</button>
+
+    <script>
+        function textChange()
+        {
+            document.getElementById("demo").innerHTML="This is the text after the button click";
+        }
+    </script>
+
+    <script>
+            // Javascript comments are the same as comments in Java.
+            /* They can be one line or span 
+                multiple lines by using backslash asterisk. */
+            document.write("<p>This is text written to the page.</p>");
+            document.write("Text can also be broken up \
+                    with a slash.");
+    </script>
+
+    <script>
+           // All Javascript variables are declared/initialized with the same tag.
+           // They always start with a letter
+           var X = 10;
+           var name;
+           name = "John Doe";
+           document.write("<p>The value of the name variable is " + name + "</p>");
+
+           // If you do not initialize a value, it will be undefined
+           var y;
+           document.write("<p>Since I did not initialize y, it is " + y+ "</p>");
+           
+           // Variables can also be set to empty by using null
+           y = null;
+           document.write("<p>Now, y is " + y+ "</p>");
+
+           // ARithemetic expressions can also be performed
+           var x = 3;
+           var y = 4;
+
+           document.write("<p>" + x + " + " + y + " is " + (x+y) + "</p>");
+
+           // Dynamic Types mean that the same variable can be different data types
+           x = 'Apple';
+           document.write("<p>Now, x is a string, " + x + "</p>");
+           x = 8;
+           document.write("<p>Now, x is a number, " + x + "</p>");
+           x = true;
+           document.write("<p>Now, x is a boolean, " + x + "</p>");
+           x = 123e5;
+           document.write("<p>Now, x is a number, " + x + "</p>");
+
+           // You can also have arrays
+           var cars=["Saab","Volvo","BMW"];
+           document.write("<p>The first element of this array is " + cars[0] + "</p>");
+
+           // Objects in Javascript can hold multiple values
+           var person={
+               firstname : "Jane",
+               lastname  : "Smith",
+               id        :  5566
+           };
+           document.write("<p>This person is " + person.firstname + " " + person.lastname + " : " + person.id + "</p>");
+
+    </script>
+
+</body>
+
+</html>
